@@ -4,12 +4,15 @@ import Hero from '../components/hero/Hero'
 
 
 
+
+
 export default function IndexPage() {
   return (
-    <div>
+    <div> 
         <NavMenu />
+        
         <Hero />
-        <Slider />
+       
     </div>
   )
 }

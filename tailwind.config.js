@@ -8,6 +8,10 @@ module.exports = {
         'accent-2': '#663333',
         'accent-3': '#cc3333',
         'accent-4': '#cccccc',
+        'black-01': '#050403',
+        'black-02': '#020302',
+        'black-03': '#050202',
+
 
       },
     },
