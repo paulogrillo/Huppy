@@ -19,7 +19,7 @@ function NavMenu() {
     
 <div className="relative bg-black-03 w-full">
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-4 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center border-b-2 border-gray-100  md:justify-start md:space-x-10">
 
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">   
@@ -41,9 +41,9 @@ function NavMenu() {
 
         <MediaQuery minWidth={901}>
 
-        <nav className="hidden md:flex space-x-10">
+        <nav className="hidden md:flex space-x-10 ">
           
-            <div className="relative">
+            <div className="relative ">
 
             <a href="/" className="text-base font-medium pr-10 text-white hover:text-white">
             Inicio
@@ -66,12 +66,12 @@ function NavMenu() {
                   leaveTo="opacity-0 scale-95"
                 >
               {(ref) => (
-                <div ref={ref} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
-                  <div className="rounded-md bg-white shadow-xs">
+                <div ref={ref} className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg ">
+                  <div className="rounded-md shadow-xs   ">
                     {/* Snipped */}
 
-                  <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                  <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2 ">
+                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden ">
                       <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           

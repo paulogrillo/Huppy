@@ -56,7 +56,7 @@ export default function MenuListComposition() {
   }, [open]);
 
   return (
-      <div className="absolute right-4 mt-2">
+      <div className="absolute right-8 top-14 mt-2">
           
       <MediaQuery maxWidth={900}>
       <div className={classes.root}>
@@ -69,7 +69,7 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-        <div><VscMenu size={22} color="#f1f1f1"/></div>
+        <div><VscMenu size={26} color="#f1f1f1"/></div>
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (
@@ -79,14 +79,21 @@ export default function MenuListComposition() {
               style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
               
             >
-              <nav className="mt-12 absolute right-1 grid gap-y-8 pt-4 bg-yellow-300 w-44  ">
+              <nav className="mt-10 absolute -right-8 grid gap-y-8 pt-4 bg-yellow-300  rounded-l-3xl w-44  ">
+            
+            <h1 className="bg-black-01 w-full rounded-l-3xl text-center ">
+              <span className="  text-base font-medium text-white">
+                Soluções
+              </span> 
+            </h1>
             <a href="#" className="-m-3 p-3 pl-6 flex items-center rounded-md hover:bg-gray-50">
-             
+            
               <svg className="flex-shrink-0 h-6 w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
+              
               <span className="ml-3 text-base font-medium text-black-03">
-                Analytics
+                Performance
               </span>
             </a>
 
@@ -96,7 +103,7 @@ export default function MenuListComposition() {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
               </svg>
               <span className="ml-3 text-base font-medium text-black-03">
-                Engagement
+                SEO
               </span>
             </a>
 
@@ -130,9 +137,9 @@ export default function MenuListComposition() {
               </span>
             </a>
             <MenuList>
-                <MenuItem>Profile</MenuItem>
-                <MenuItem>My account</MenuItem>
-                <MenuItem>Logout</MenuItem>
+                <MenuItem>Contato</MenuItem>
+                <MenuItem>Orçamentos</MenuItem>
+                <MenuItem>Blog</MenuItem>
             </MenuList>
           </nav>
           

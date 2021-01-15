@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }) {
       
       <ChakraProvider>
       <Head>
-      <title>Sternah - Agency Performance</title>
+      <title>Huppy</title>
       <meta property="og:title" content="Home" key="title" />
-        <link rel="shortcut icon" href="/global/favicon-01.svg" />
+        <link rel="shortcut icon" href="/favicon-01.png" />
       </Head> 
       <Component {...pageProps} />
      
