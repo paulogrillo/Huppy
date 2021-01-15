@@ -39,16 +39,16 @@ function NavMenu() {
 
 
 
-        <MediaQuery minWidth={901}>
+        <MediaQuery minWidth={986}>
 
         <nav className="hidden md:flex space-x-10 ">
           
             <div className="relative ">
 
-            <a href="/" className="text-base font-medium pr-10 text-white hover:text-white">
+            <a href="/" className="text-base font-medium pr-10 text-white hover:text-yellow-300">
             Inicio
             </a>
-                <button onClick={() => setIsOpen(!isOpen)} type="button" className="group  rounded-md text-white inline-flex items-center text-base font-medium hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <button onClick={() => setIsOpen(!isOpen)} type="button" className="group  rounded-md text-white inline-flex items-center text-base font-medium hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     <span >Soluções</span>
             
                     <svg className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -79,12 +79,15 @@ function NavMenu() {
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                           </svg>
                           <div className="ml-4">
+                             
                               <p className="text-base font-medium text-gray-900">
-                              Analytics
+                              Desgin
                               </p>
-                              <p className="mt-1 text-sm text-gray-500">
-                              Gestão de dados e KPI's
-                              </p>
+                              <ul className="mt-4 text-sm text-gray-500">
+                                  <li className="list-disc">Identidade Visual</li>
+                                  <li className="list-disc">Mídias sociais</li>
+                                  <li className="list-disc">Web Design</li>
+                              </ul>          
                           </div>
                           </a>
 
@@ -95,11 +98,16 @@ function NavMenu() {
                           </svg>
                           <div className="ml-4">
                               <p className="text-base font-medium text-gray-900">
-                              Engagement
+                              Marketing Digital
                               </p>
-                              <p className="mt-1 text-sm text-gray-500">
-                              Comunicação assertiva e consistente.
-                              </p>
+                              <ul className="mt-4 text-sm text-gray-500">
+                                  <li className="list-disc">Auditoria</li>
+                                  <li className="list-disc">SEO</li>
+                                  <li className="list-disc">Inbound</li>
+                                  <li className="list-disc">Data Analytics</li>
+
+                              </ul>  
+                             
                           </div>
                           </a>
 
@@ -110,11 +118,15 @@ function NavMenu() {
                           </svg>
                           <div className="ml-4">
                               <p className="text-base font-medium text-gray-900">
-                              Security
+                              Desenvolvimento Web
                               </p>
-                              <p className="mt-1 text-sm text-gray-500">
-                              Gestão de rísco.
-                              </p>
+                              <ul className="mt-4 text-sm text-gray-500">
+                                  <li className="list-disc">Site institucional</li>
+                                  <li className="list-disc">E-commerce</li>
+                                  <li className="list-disc">Blog</li>
+                                  <li className="list-disc">Landing Page</li>
+
+                              </ul>  
                           </div>
                           </a>
 
@@ -125,28 +137,21 @@ function NavMenu() {
                           </svg>
                           <div className="ml-4">
                               <p className="text-base font-medium text-gray-900">
-                              Integrations
+                              Onboarding
                               </p>
-                              <p className="mt-1 text-sm text-gray-500">
-                              Integrações com marketplaces, hubs de markerting e API's.
-                              </p>
+                              <ul className="mt-4 text-sm text-gray-500">
+                                  <li className="list-disc">Marketplaces</li>
+                                  <li className="list-disc">Magento</li>
+                                  <li className="list-disc">Wordpress</li>
+                                  <li className="list-disc">Loja Integrada</li>
+                                  <li className="list-disc">Vtex</li>
+
+
+                              </ul>  
                           </div>
                           </a>
 
-                          <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                           
-                          <svg className="flex-shrink-0 h-6 w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                          </svg>
-                          <div className="ml-4">
-                              <p className="text-base font-medium text-gray-900">
-                              Automations
-                              </p>
-                              <p className="mt-1 text-sm text-gray-500">
-                              Otimização de tarefas
-                              </p>
-                          </div>
-                          </a>
                       </div>
                       <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                           <div className="flow-root">
@@ -181,17 +186,17 @@ function NavMenu() {
 
             </div>
 
-            <a href="#" className="text-base font-medium  text-white hover:text-white">
+            <a href="#" className="text-base font-medium  text-white hover:text-yellow-300">
             Portfólio
             </a>
      
-            <a href="#" className="text-base font-medium text-white hover:text-white">
+            <a href="#" className="text-base font-medium text-white hover:text-yellow-300">
             Blog
             </a>
             
         </nav>
-        </MediaQuery>
-
+        </ MediaQuery>
+        <MediaQuery minWidth={1000}>
         <div className="hidden h-auto md:flex items-center justify-end md:flex-1 lg:w-0">
         <Box
            
@@ -218,7 +223,7 @@ function NavMenu() {
         
       </div>
 
-
+      
 
       <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
@@ -228,7 +233,9 @@ function NavMenu() {
 
 
     </div>
+    
   </div>
+  </MediaQuery>
 </div>
 
 

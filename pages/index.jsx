@@ -12,6 +12,7 @@ export default function IndexPage() {
         <NavMenu />
         
         <Hero />
+        <Slider />
        
     </div>
   )
